@@ -1,8 +1,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/prashant-kumar18/renclo)](https://github.com/prashant-kumar18/renclo/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/prashant-kumar18/renclo)](https://github.com/prashant-kumar18/renclo/network)
 [![GitHub issues](https://img.shields.io/github/issues/prashant-kumar18/renclo)](https://github.com/prashant-kumar18/renclo/issues) 
-# yours-app
-Yours is a chatting App solely build with Flutter
+# Renclo
+Cloth renting application
 
 # Screenshots :
 ![alt text](https://github.com/prashant-kumar18/renclo/blob/master/meal.png)
