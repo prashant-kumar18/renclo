@@ -1,0 +1,232 @@
+<% include partials/header %>
+  <!-- Start slider -->
+  <section id="aa-slider">
+    <div class="aa-slider-area">
+      <div id="sequence" class="seq">
+        <div class="seq-screen">
+          <ul class="seq-canvas">
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq src="/img/slide8.jpg" alt="Men slide img" />
+              </div>
+              <div class="seq-title">
+               <span data-seq>Save Up to 75% Off</span>
+                <h2 data-seq>Men Collection</h2>
+                <p data-seq>Best Place to Buy Awesome Men's Clothing</p>
+                <a data-seq href="/category/men" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq src="/img/slide10.jpg" alt="Wristwatch slide img" />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save Up to 40% Off</span>
+                <h2 data-seq>Kids Clothing Collection</h2>
+                <p data-seq>Style your Kid's with latest Trends</p>
+                <a data-seq href="/category/kid" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->
+            <li>
+              <div class="seq-model">
+                <img data-seq src="/img/slide4.jpg" alt="Women Jeans slide img" />
+              </div>
+              <div class="seq-title">
+                <span data-seq>Save Up to 75% Off</span>
+                <h2 data-seq>Women Dress Collection</h2>
+                <p data-seq>Style your Own Life with our trendy cloths</p>
+                <a data-seq href="/category/women" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+              </div>
+            </li>
+            <!-- single slide item -->
+            <!-- single slide item -->
+          </ul>
+        </div>
+        <!-- slider navigation btn -->
+        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+  <!-- / slider -->
+  <!-- Start Promo section -->
+  <section id="aa-promo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-promo-area">
+            <div class="row">
+              <!-- promo left -->
+              <div class="col-md-5 no-padding">
+                <div class="aa-promo-left">
+                  <div class="aa-promo-banner">
+                    <img src="/img/slide5.jpg" alt="img">
+                    <div class="aa-prom-content">
+                      <span>75% Off</span>
+                      <h4><a href="/category/women">For Women</a></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- promo right -->
+              <div class="col-md-7 no-padding">
+                <div class="aa-promo-right">
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">
+                      <img src="/img/slide6.jpg" alt="img">
+                      <div class="aa-prom-content">
+                        <span>Exclusive Item</span>
+                        <h4><a href="/category/men">For Men</a></h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">
+                      <img src="/img/slide3.jpg" alt="img">
+                      <div class="aa-prom-content">
+                        <span>Sale Off</span>
+                        <h4><a href="/category/women">On Every Ladies Dress</a></h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">
+                      <img src="/img/slide9.jpg" alt="img">
+                      <div class="aa-prom-content">
+                        <span>New Arrivals</span>
+                        <h4><a href="/category/kid">For Kids</a></h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-single-promo-right">
+                    <div class="aa-promo-banner">
+                      <img src="/img/slide1.jpg" alt="img">
+                      <div class="aa-prom-content">
+                        <span>25% Off</span>
+                        <h4><a href="/category/men">For Men's Clothing</a></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Promo section -->
+
+  <!-- banner section -->
+  <section id="aa-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="aa-banner-area">
+            <a href="/category/men"><img src="/img/slide2.jpg" alt="fashion banner img"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- popular section -->
+  <section id="aa-popular-category">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="aa-popular-category-area">
+              <!-- start prduct navigation -->
+             <ul class="nav nav-tabs aa-products-tab">
+                <li class="active"><a href="#popular" data-toggle="tab">Exclusive</a></li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <!-- Start men popular category -->
+                <div class="tab-pane fade in active" id="popular">
+                  <ul class="aa-product-catg aa-popular-slider">
+                    <!-- start single product item -->
+                    <%for(var i = 0; i < indexproduct.length; i++){%>
+
+                                  <li>
+                                    <figure>
+                                      <a class="aa-product-img" href="/product/<%=indexproduct[i]._id%>"><img src="<%=indexproduct[i].image%>" alt="polo shirt img"></a>
+                                      <a class="aa-add-card-btn"href="/product/<%=indexproduct[i]._id%>"><span class="fa fa-shopping-cart"></span>Buy Now</a>
+                                      <figcaption>
+                                        <h4 class="aa-product-title"><a href="#"><span class="btn btn-success "><%=indexproduct[i].rating%></span>&nbsp&nbsp<%=indexproduct[i].title%></a></h4>
+                                        <span class="aa-product-price">Rs. <%=indexproduct[i].price%></span>
+                                      </figcaption>
+                                    </figure>
+                                    <!-- product badge -->
+                                  <%  if(currentuser && currentuser.isadmin){%>
+                                  <form  style="display:inline;" action="/delete/<%=indexproduct[i]._id%>?_method=delete" method="post">
+                                    <button class="btn btn-warning">Delete</button>
+                                  </form>
+                                      <a class="btn btn-warning"href="/product/<%=indexproduct[i]._id%>/edit">Edit</a>
+                                  <%  }%>
+                                     <span class="aa-badge aa-hot" href="#"><%=indexproduct[i].tag%></span>
+                                     <hr>
+                                  </li>
+                                  <!-- start single product item -->
+                                    <% }%>
+                  </ul>
+                  <a class="aa-browse-btn" href="/product">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                </div>
+                <!-- / popular product category -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / popular section -->
+  <!-- Support section -->
+  <section id="aa-support">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-support-area">
+            <!-- single support -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="aa-support-single">
+                <span class="fa fa-truck"></span>
+                <h4>FREE SHIPPING</h4>
+                <P>All the clothes are delivered any where across India</P>
+              </div>
+            </div>
+            <!-- single support -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="aa-support-single">
+                <span class="fa fa-clock-o"></span>
+                <h4>30 DAYS MONEY BACK</h4>
+                <P>Security money of Rs 500 will be charged. And after returning clothes this money will be refunded</P>
+              </div>
+            </div>
+            <!-- single support -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="aa-support-single">
+                <span class="fa fa-phone"></span>
+                <h4>SUPPORT 24/7</h4>
+                <P>Our employees are available for you
+
+Call us on +91 7866965092 any time between 9 A.M to 9 P.M</P>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Support section -->
+
+
+
+<% include partials/footer %>
