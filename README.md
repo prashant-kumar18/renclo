@@ -5,7 +5,7 @@
 Cloth renting application
 
 # Screenshots :
-![alt text](https://github.com/prashant-kumar18/renclo/blob/master/meal.png)
+![alt text](https://github.com/prashant-kumar18/renclo/blob/master/renclo.png)
 
 # Screens:
 
